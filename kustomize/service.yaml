@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  # unique key of the service instance (hardcoded in app)
+  name: helloworld
+spec:
+  # this defines which parts are going to be represented by service
+  # service becomes an endpoint for either for other services or
+  # external users to connect to such as a browser
+  selector:
+    # selector labels are and-ed
+    app: helloworld
+  ports:
+    - name: apiport
+      port: 80
+      targetPort: 8000
+  type: ClusterIP
