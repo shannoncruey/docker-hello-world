@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: shannoncruey/docker-hello-world:0.2
+          image: shannoncruey/docker-hello-world:0.1
           imagePullPolicy: Always
           resources:
             limits:
