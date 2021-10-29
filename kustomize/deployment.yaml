@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: crccheck/hello-world
-          imagePullPolicy: IfNotPresent
+          image: shannoncruey/docker-hello-world:0.2
+          imagePullPolicy: Always
           resources:
             limits:
               cpu: 1100m
